@@ -47,10 +47,10 @@ export default {
         return new Response(`File uploaded to https://media.sdhstorage.web.id/${objectKey}`);
       }
   
-      // Serve static HTML
-      return new Response("Static mode, please upload using form", {
+      return new Response("Ready for upload!", {
         headers: { "Content-Type": "text/plain" }
       });
     }
   };
   
+  // Deploy to Git
