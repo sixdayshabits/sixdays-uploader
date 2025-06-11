@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>R2 Uploader with Folders</title>
+</head>
+<body>
+  <h1>Upload File ke R2</h1>
+
+  <div>
+    <label for="folderSelect">Pilih Folder:</label>
+    <select id="folderSelect">
+      <option value="">(root)</option>
+      <!-- folder list will be inserted dynamically -->
+    </select>
+
+    <input type="text" id="newFolderName" placeholder="Nama folder baru" />
+    <button id="createFolderBtn">Buat Folder</button>
+  </div>
+
+  <hr>
+
+  <form id="uploadForm" enctype="multipart/form-data">
+    <input type="file" name="file" required />
+    <button type="submit">Upload</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
